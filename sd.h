@@ -13,4 +13,4 @@ void sd_init();
 //格式化sd卡，init失败时使用,格式为FM_FAT32
 void sd_mount();
 //读数据
-void sd_read_data(char *file_name, char rd_data[]);
+void sd_read_data(char rd_data[]);
