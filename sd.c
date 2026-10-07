@@ -28,7 +28,7 @@ void sd_mount()
 	}
 }
 
-void sd_read_data(char *file_name, char rd_data[])
+void sd_read_data(char rd_data[])
 {
 	FIL fil;
 	UINT br;
@@ -37,3 +37,4 @@ void sd_read_data(char *file_name, char rd_data[])
 	f_lseek(&fil,0);
 	f_read(&fil,rd_data,LEN,&br);
 }
+
